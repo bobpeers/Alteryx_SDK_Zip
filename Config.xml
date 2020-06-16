@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <AlteryxJavaScriptPlugin>
-  <EngineSettings EngineDll="Python" EngineDllEntryPoint="DataHashEngine.py" SDKVersion="10.1" />
-  <GuiSettings Html="DataHashGUI.html" Icon="DataHash/DataHashIcon.png" Help="https://github.com/bobpeers/Alteryx_SDK_Data_Hash" SDKVersion="10.1">
+  <EngineSettings EngineDll="Python" EngineDllEntryPoint="ZipEngine.py" SDKVersion="10.1" />
+  <GuiSettings Html="ZipGUI.html" Icon="Zip/ZipIcon.png" Help="https://github.com/bobpeers/Alteryx_SDK_Zip" SDKVersion="10.1">
     <InputConnections>
       <Connection Name="Input" AllowMultiple="False" Optional="False" Type="Connection" Label="I"/>
     </InputConnections>
@@ -11,13 +11,13 @@
   </GuiSettings>
   <Properties>
     <MetaInfo>
-      <Name>Data Hasher</Name>
-      <Description>Calculates hashes of input data using the chosen algorithm</Description>
-      <CategoryName>Developer</CategoryName>
-      <SearchTags>python, hash, cryptographic</SearchTags>
+      <Name>Zip</Name>
+      <Description>Tool to handle compressed archives. Extracts zip, tar and tar.gz archives.</Description>
+      <CategoryName>File System</CategoryName>
+      <SearchTags>python, zip, compress, extract, files</SearchTags>
       <ToolVersion>1.0</ToolVersion>
       <Author>Bob Peers</Author>
-      <Company>Inviso A/S</Company>
+      <Company></Company>
       <Copyright>2020</Copyright>
     </MetaInfo>
   </Properties>
