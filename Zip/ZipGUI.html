@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Compressed File Extractor</title>
+  <script type="text/javascript">
+    document.write('<link rel="import" href="' + window.Alteryx.LibDir + '2/lib/includes.html">');
+  </script>
+</head>
+<body>
+  <h1>Compressed File Extractor</h1>
+  <section>
+    <div class='info'>
+      <div>Works with zip, tar and tar.gz compressed files.</div>
+      <div>The tool can be fed any file type but only compressed archives (zip etc.) will be processed.</div>
+      <div>Extracts files from compresssed folders and returns the path to the files extracted.</div>
+      <div>Exisitng files in the extract location will be ovewritten by default unless changed in the tool configuration.</div>
+    </div>
+  </section>
+  <form>
+    <fieldset>
+      <legend>XMSG("Select Options")</legend>
+      <section>
+        <label for='path'>XMSG("Select the source file path:")</label>
+        <ayx id='path' data-ui-props="{type: 'DropDown'}" data-item-props="{dataName: 'SourceField', dataType: 'FieldSelector', fieldType: 'String', anchorIndex:'0', connectionIndex:'0'}"></ayx>
+	</section>
+  <section>
+    <label for='exttractpath'>XMSG("Enter the file extract path")</label>
+    <ayx id='extractpath' data-ui-props="{type:'TextBox'}" data-item-props="{dataName: 'ExtractPath'}"></ayx>
+    </section>
+    <section>
+      <label fir ='NoOverwrite'>XMSG("Check here to prevent overwriting existing files")</label>
+      <ayx id="NoOverwrite" data-ui-props="{type:'CheckBox', label:'Do Not overwrite'}" data-item-props="{dataName:'NoOverwrite'}"></ayx>
+    </section>
+    </fieldset>
+  </form>
+  <style>
+    .info {
+        border:2px solid #EA7C7C;
+        border-radius: 5px;
+        padding:10px;
+    }
+
+    .info>div {margin:10px 0 10px 0;}
+  
+    body {
+      font-size: 10pt;
+      font-family: Arial, sans-serif;
+      margin:20px;
+    }
+	
+    legend {
+	    border:none;
+    }
+	
+	fieldset {
+		border: 2px solid #EA7C7C;
+    border-radius: 5px;
+	}
+		
+	section,label, select, checkbox, ayx {
+		padding: 10px 0 10px 0;	
+	}
+  </style>
+</body>
+</html>
