@@ -13,6 +13,7 @@ exisiting files but this can be changed in the tools configuration.
 
 ## Outputs
 Sucessful operations will be output to the O-Output. The full path to the extracted file is appended to the incoming stream.
+If there are no compressed files fed into the tool there will be no output.
 
 ## Example Workflow
 Map the filepath in the tool configuration and set the extraction path and overwrite options.
