@@ -17,5 +17,5 @@ Sucessful operations will be output to the O-Output. The full path to the extrac
 ## Example Workflow
 Map the filepath in the tool configuration and set the extraction path and overwrite options.
 
-![alt text](https://github.com/bobpeers/Alteryx_SDK_Data_Hash/blob/master/images/Dash%20Hash%20flow.png "Exampe Alteryx Workflow")
+![alt text](https://github.com/bobpeers/Alteryx_SDK_Zip/blob/master/images/Zip_example_workflow.png "Exampe Alteryx Workflow")
 
