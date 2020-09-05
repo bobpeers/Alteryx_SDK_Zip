@@ -26,11 +26,12 @@
 	</section>
   <section>
     <label for='exttractpath'>XMSG("Enter the file extract path")</label>
-    <ayx id='extractpath' data-ui-props="{type:'TextBox'}" data-item-props="{dataName: 'ExtractPath'}"></ayx>
+    <ayx data-ui-props='{type:"FileBrowse", widgetId:"extractpath", browseType:"Folder"}' data-item-props="{dataName:'ExtractPath'}"></ayx>
     </section>
     <section>
       <label fir ='NoOverwrite'>XMSG("Check here to prevent overwriting existing files")</label>
       <ayx id="NoOverwrite" data-ui-props="{type:'CheckBox', label:'Do Not overwrite'}" data-item-props="{dataName:'NoOverwrite'}"></ayx>
+    
     </section>
     </fieldset>
   </form>
